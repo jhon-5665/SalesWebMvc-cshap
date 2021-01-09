@@ -9,7 +9,7 @@ namespace SalesWebMvc.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Departament");
+                name: "Department");
 
             migrationBuilder.CreateTable(
                 name: "Department",
@@ -92,7 +92,7 @@ namespace SalesWebMvc.Migrations
                 name: "Department");
 
             migrationBuilder.CreateTable(
-                name: "Departament",
+                name: "Department",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -101,7 +101,7 @@ namespace SalesWebMvc.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Departament", x => x.Id);
+                    table.PrimaryKey("PK_Department", x => x.Id);
                 });
         }
     }
